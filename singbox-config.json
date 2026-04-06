@@ -738,6 +738,10 @@
         "outbound": "📋 BT下载"
       },
       {
+        "rule_set": ["PUBGM"],
+        "outbound": "🎮 游戏平台"
+      },
+      {
         "rule_set": [
           "cn-direct",
           "WeChat",
@@ -1413,6 +1417,28 @@
         "path": "./rule_provider/geolocation-non-cn.srs",
         "url": "https://v6.gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geolocation-!cn.srs",
         "download_detour": "🎯 本地直连"
+      },
+      {
+        "tag": "PUBGM",
+        "type": "inline",
+        "rules": [
+          {
+            "domain_suffix": [
+              "pubg.com",
+              "pubgmobile.com",
+              "battlegrounds.com",
+              "proxima.beta.a14g.net",
+              "pubgm.qq.com",
+              "shibiao.tencentcs.com",
+              "datamore.qq.com",
+              "cfg.imsdk.qq.com",
+              "mobilecrm.qq.com",
+              "itop.tencentcs.com",
+              "game.gtimg.cn",
+              "wup.tencentyun.com"
+            ]
+          }
+        ]
       }
     ],
     "final": "🐟 漏网之鱼",
